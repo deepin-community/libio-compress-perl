@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_auto_test:
+	TEST_SKIP_VERSION_CHECK=1 dh_auto_test
+
+override_dh_installexamples:
+	dh_installexamples
+	find $(TMP)/usr/share/doc/$(PACKAGE)/examples \
+		-type f -exec sed -i '1s|^#!/usr/local/bin/perl|#!/usr/bin/perl|' '{}' \;

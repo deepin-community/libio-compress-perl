@@ -1,0 +1,464 @@
+libio-compress-perl (2.101-1) unstable; urgency=medium
+
+  * Import upstream version 2.101.
+  * Bump versioned (build) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Feb 2021 15:16:34 +0100
+
+libio-compress-perl (2.100-1) unstable; urgency=medium
+
+  * Import upstream version 2.100.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Bump versioned (build) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 10 Jan 2021 14:30:09 +0100
+
+libio-compress-perl (2.096-1) unstable; urgency=medium
+
+  * Import upstream version 2.096.
+  * Update versioned (build) dependencies.
+  * Update lintian overrides.
+    Remove names of scripts as the lintian output is not
+    deterministic anymore.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 01 Aug 2020 17:45:47 +0200
+
+libio-compress-perl (2.095-1) unstable; urgency=medium
+
+  * Import upstream version 2.095.
+  * Bump versioned (build) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 22 Jul 2020 16:23:36 +0200
+
+libio-compress-perl (2.094-1) unstable; urgency=medium
+
+  * Import upstream version 2.094.
+  * Update years of upstream and packaging copyright.
+  * Bump versioned (build) dependencies.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 14 Jul 2020 18:34:59 +0200
+
+libio-compress-perl (2.093-1) unstable; urgency=medium
+
+  * Team upload
+
+  * New upstream version 2.093
+  * d/control:
+    - Refresh build dependencies
+    - Add Rules-Requires-Root field
+  * d/copyright:
+    - Sort header stanza
+  * d/u/metadata:
+    - Add Bug-Submit field
+
+ -- Nick Morrott <nickm@debian.org>  Sun, 08 Dec 2019 15:34:53 +0000
+
+libio-compress-perl (2.090-1) unstable; urgency=medium
+
+  * Import upstream version 2.090.
+  * Drop spelling.patch, merged upstream.
+  * Bump version of build dependencies.
+  * Add patch to make new test work under autopkgtest.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 10 Nov 2019 22:51:50 +0100
+
+libio-compress-perl (2.089-1) unstable; urgency=medium
+
+  * Import upstream version 2.089.
+  * Update versioned build dependencies.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Update lintian overrides.
+  * Add diversions for the new scipt streamzip and its manpage to the
+    preinst and postinst scripts proactively, under the assumption that it
+    will appear in perl core when IO::Compress is updated there.
+  * Add spelling.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 04 Nov 2019 17:14:13 +0100
+
+libio-compress-perl (2.087-1) unstable; urgency=medium
+
+  * Import upstream version 2.087.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+  * Bump versioned build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 11 Aug 2019 14:43:32 +0200
+
+libio-compress-perl (2.086-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Utkarsh Gupta ]
+  * New upstream version 2.086
+  * Update dependency on libcompress-raw-*
+  * Bump compat to 12, Standards-Version to 4.4.0
+
+  [ gregor herrmann ]
+  * Update debian/upstream/metadata.
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Tue, 16 Jul 2019 21:17:39 +0530
+
+libio-compress-perl (2.084-1) unstable; urgency=medium
+
+  * Import upstream version 2.084.
+  * Update years of upstream and packaging copyright.
+  * Bump versioned build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 12 Jan 2019 18:04:27 +0100
+
+libio-compress-perl (2.083-1) unstable; urgency=medium
+
+  * Email change: Xavier Guimard -> yadd@debian.org
+  * Import upstream version 2.083
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Update dependencies versions (libcompress-raw-bzip2-perl and
+    libcompress-raw-zlib-perl)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 02 Jan 2019 23:32:14 +0100
+
+libio-compress-perl (2.081-1) unstable; urgency=medium
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Xavier Guimard ]
+  * Import upstream version 2.081
+  * Declare compliance with Debian Policy 4.1.4
+  * Update Compress::Zlib and Compress::Bzip2 version dependencies
+  * Update copyright years
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 15 Apr 2018 08:35:27 +0200
+
+libio-compress-perl (2.074-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Nick Morrott ]
+  * New upstream version 2.070 (Closes: #839208)
+  * debian/copyright: update copyright years
+  * debian/control: declare compliance with Debian Policy 3.9.8
+  * debian/control: refresh build-dependencies
+  * debian/upstream/metadata: add Bug-* fields
+  * Add debian/libio-compress-perl.lintian-overrides
+
+  [ gregor herrmann ]
+  * Import upstream version 2.074
+  * Set TEST_SKIP_VERSION_CHECK=1 for autopkgtest as well.
+  * Update years of upstream and packaging copyright.
+  * debian/control: bump versioned build dependencies.
+  * Drop Breaks/Replaces against ancient packages which are not even in
+    oldoldstable anymore. Also drop the Provides for them; there are still
+    consumers but the same virtual packages are provided by src:perl.
+  * Add debian/tests/pkg-perl/use-name to activate autopkgtest's use.t.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 18 Jun 2017 16:34:22 +0200
+
+libio-compress-perl (2.069-1) unstable; urgency=medium
+
+  * Import upstream version 2.069
+  * Update years of upstream copyright.
+  * Bump versioned (build) dependencies.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 05 Oct 2015 18:11:26 +0200
+
+libio-compress-perl (2.068-2) unstable; urgency=medium
+
+  * Divert away /usr/bin/zipdetails from perl core and its manpage.
+    (Closes: #790666)
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Jul 2015 19:17:42 +0200
+
+libio-compress-perl (2.068-1) unstable; urgency=medium
+
+  * Add debian/upstream/metadata
+  * Import upstream version 2.068
+  * Update years of packaging copyright.
+  * Bump versioned (build) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 06 May 2015 21:57:40 +0200
+
+libio-compress-perl (2.066-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * New upstream release.
+    Fixes "IO::Uncompress::Gunzip: Can no longer gunzip to in-memory file
+    handle" (Closes: #762486)
+  * Bump versioned (build) dependencies.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 23 Sep 2014 17:24:52 +0200
+
+libio-compress-perl (2.064-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update years of copyright.
+  * Bump versioned build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 12 Feb 2014 19:16:31 +0100
+
+libio-compress-perl (2.063-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump versioned (build) dependencies.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 04 Nov 2013 18:29:48 +0100
+
+libio-compress-perl (2.062-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Bump versioned build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 05 Oct 2013 20:25:47 +0200
+
+libio-compress-perl (2.061-1) unstable; urgency=low
+
+  * Imported Upstream version 2.061
+  * Update dependencies versions
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sat, 01 Jun 2013 08:20:42 +0200
+
+libio-compress-perl (2.060-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+
+  [ gregor herrmann ]
+  * Recommend libio-compress-lzma-perl. Thanks to Vincent Lefevre for the
+    bug report. (Closes: #698790)
+  * Improve long description. Thanks to Vincent Lefevre for the hints.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 2.060
+  * Bump Standards-Version to 3.9.4
+  * Update debian/copyright years
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 04 May 2013 20:21:02 +0200
+
+libio-compress-perl (2.055-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself to Uploaders
+  * Bump build deps versions
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 11 Aug 2012 14:00:32 +0200
+
+libio-compress-perl (2.052-1) unstable; urgency=low
+
+  [ Alessandro Ghedini ]
+  * New upstream release 2.049
+  * Use ${source:Upstream-Version} instead of manually setting the required
+    version for libcompress-raw-{bzip2,zlib}-perl
+
+  [ Scott Kitterman ]
+  * Remove myself from uploaders
+
+  [ gregor herrmann ]
+  * New upstream release 2.052.
+  * Bump build dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.052.
+  * debian/rules: remove unneeded override_dh_auto_configure.
+  * debian/copyright: update to Copyright-Format 1.0.
+  * Bump Standards-Version to 3.9.3 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 04 May 2012 14:53:56 +0200
+
+libio-compress-perl (2.048-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update years of upstream and packaging copyright.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.048.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 30 Jan 2012 22:51:04 +0100
+
+libio-compress-perl (2.046-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 19 Dec 2011 23:11:06 +0100
+
+libio-compress-perl (2.045-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.045.
+  * The FAQ now gets manified and installed by the upstream build system,
+    remove manual pod2man invocation from debian/rules.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 07 Dec 2011 18:01:46 +0100
+
+libio-compress-perl (2.043-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.043.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 25 Nov 2011 15:07:51 +0100
+
+libio-compress-perl (2.040-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.040.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 02 Nov 2011 20:50:39 +0100
+
+libio-compress-perl (2.037-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Remove transitional dummy packages
+    (closes: #542686, #542691, #542694, #542696).
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Sat, 17 Sep 2011 12:14:05 +0200
+
+libio-compress-perl (2.037-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.037.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 03 Jul 2011 16:36:18 +0200
+
+libio-compress-perl (2.036-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.036.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 19 Jun 2011 18:02:32 +0200
+
+libio-compress-perl (2.035-1) unstable; urgency=low
+
+  [ Nicholas Bamber ]
+  * New upstream release
+  * Raised standards version to 3.9.2
+
+  [ gregor herrmann ]
+  * Bump build and runtime dependencies on libcompress-raw-zlib-perl and
+    libcompress-raw-bzip2-perl to >= 2.035.
+  * Bump debhelper compatibility level to 8.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 14 May 2011 15:28:58 +0200
+
+libio-compress-perl (2.033-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * New upstream release 2.025
+  * Remove patch disable-zlib-version-test, applied upstream. Remove quilt
+    framework.
+  * Convert to source format 3.0 (quilt).
+  * Bump versioned (build) dependency on libcompress-raw-bzip2-perl and
+    libcompress-raw-zlib-perl.
+  * Set Standards-Version to 3.9.1; replace Conflicts with Breaks.
+
+  [ Chris Butler ]
+  * New upstream release 2.026
+
+  [ Jonathan Yu ]
+  * New upstream release 2.030, 2.033
+  * Refresh copyright information
+
+  [ Nicholas Bamber ]
+  * Adding myself to Uploaders
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Mar 2011 22:02:36 +0100
+
+libio-compress-perl (2.024-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release 2.023
+  * Drop perl version dependency
+  * Update rules to use commonly accepted pkg-perl styles
+
+  [ gregor herrmann ]
+  * Fix Homepage field in debian/control.
+
+  [ Maximilian Gass ]
+  * Add patch to disable zlib version tests (Closes: #564352)
+  * debian/rules: switch to find for fixing examples (multiple directories)
+
+  [ gregor herrmann ]
+  * New upstream release 2.024.
+  * debian/copyright: update years of copyright and formatting.
+  * Set Standards-Version to 3.8.4 (no changes).
+  * Bump versioned build and runtime dependencies on
+    libcompress-raw-bzip2-perl and libcompress-raw-zlib-perl.
+  * debian/rules: set DESTDIR instead of using a separate .install file; use
+    variables for several overrides.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 11 Feb 2010 16:32:49 +0100
+
+libio-compress-perl (2.022-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Update ryan52's email address
+
+  [ Damyan Ivanov ]
+  * New upstream release
+
+ -- Damyan Ivanov <dmn@debian.org>  Sun, 01 Nov 2009 19:35:42 +0200
+
+libio-compress-perl (2.021-1) unstable; urgency=low
+
+  * New upstream release
+    - update deps
+  * Add myself to Uploaders
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Tue, 01 Sep 2009 13:18:17 -0700
+
+libio-compress-perl (2.020-2) unstable; urgency=low
+
+  * fix interpreter path of examples (Closes: #543611)
+  * add myself to Uploaders
+
+ -- Damyan Ivanov <dmn@debian.org>  Wed, 26 Aug 2009 11:36:26 +0300
+
+libio-compress-perl (2.020-1) unstable; urgency=low
+
+  [ Scott Kitterman ]
+  * Initial release that combines Compress-Zlib, IO-Compress-Zlib,
+    IO-Compress-Bzip2, and IO-Compress-Base into a single package
+    (Closes: #538214)
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 21 Aug 2009 14:58:23 +0200

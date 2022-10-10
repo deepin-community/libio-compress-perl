@@ -1,0 +1,16 @@
+Description: set bindir when run under autopkgtest
+Origin: vendor
+Forwarded: not-needed
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2019-11-10
+
+--- a/t/011-streamzip.t
++++ b/t/011-streamzip.t
+@@ -40,6 +40,7 @@
+ #$Perl .= " -Mblib " ;
+ my $binDir = $ENV{PERL_CORE} ? "../ext/IO-Compress/bin/"
+                              : "./bin/";
++$binDir = '/usr/bin/' if $ENV{AUTOPKGTEST_TMP};
+ 
+ my $hello1 = <<EOM ;
+ hello
