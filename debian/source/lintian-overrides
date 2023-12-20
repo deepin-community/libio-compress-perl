@@ -1,4 +1,0 @@
-# We do this on purpose, really
-libio-compress-perl source: version-substvar-for-external-package libio-compress-perl -> libcompress-raw-bzip2-perl
-libio-compress-perl source: version-substvar-for-external-package libio-compress-perl -> libcompress-raw-zlib-perl
-libio-compress-perl source: version-substvar-for-external-package libio-compress-perl -> libio-compress-lzma-perl
