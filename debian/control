@@ -7,11 +7,11 @@ Section: perl
 Testsuite: autopkgtest-pkg-perl
 Priority: optional
 Build-Depends: debhelper-compat (= 13)
-Build-Depends-Indep: libcompress-raw-bzip2-perl (>= 2.101) <!nocheck>,
-                     libcompress-raw-zlib-perl (>= 2.101) <!nocheck>,
+Build-Depends-Indep: libcompress-raw-bzip2-perl (>= 2.206) <!nocheck>,
+                     libcompress-raw-zlib-perl (>= 2.206) <!nocheck>,
                      libtest-pod-perl <!nocheck>,
                      perl
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libio-compress-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libio-compress-perl.git
 Homepage: https://metacpan.org/release/IO-Compress
@@ -21,10 +21,10 @@ Package: libio-compress-perl
 Architecture: all
 Depends: ${misc:Depends},
          ${perl:Depends},
-         libcompress-raw-bzip2-perl (>= ${source:Upstream-Version}),
-         libcompress-raw-zlib-perl (>= ${source:Upstream-Version})
-# add libio-compress-zstd-perl once they are packaged
-Recommends: libio-compress-lzma-perl (>= ${source:Upstream-Version})
+         libcompress-raw-bzip2-perl (>= 2.206),
+         libcompress-raw-zlib-perl (>= 2.206)
+# add libio-compress-zstd-perl once it is packaged
+Suggests: libio-compress-lzma-perl (>= 2.206)
 Description: bundle of IO::Compress modules
  This package contains the following IO::Compress and IO::Uncompress modules:
  .

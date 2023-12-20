@@ -1,3 +1,76 @@
+libio-compress-perl (2.206-1) unstable; urgency=medium
+
+  * Import upstream version 2.206.
+  * Bump versioned (test) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 30 Jul 2023 02:13:53 +0200
+
+libio-compress-perl (2.204-1) unstable; urgency=medium
+
+  * Import upstream version 2.204.
+  * Update years of upstream and packaging copyright.
+  * Bump versioned dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2023 23:24:46 +0100
+
+libio-compress-perl (2.201-2) unstable; urgency=medium
+
+  * Add patch to fix test issue with different build time vs. runtime zlib
+    version. (Closes: #1026753)
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 30 Dec 2022 18:24:47 +0100
+
+libio-compress-perl (2.201-1) unstable; urgency=medium
+
+  * Import upstream versions 2.106, 2.201.
+  * Bump versioned (build) dependencies.
+  * Declare compliance with Debian Policy 4.6.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 29 Jun 2022 16:29:07 +0200
+
+libio-compress-perl (2.105-1) unstable; urgency=medium
+
+  * Import upstream version 2.105.
+  * debian/copyright: remove information about removed file.
+  * Drop (build) dependency unnecessary after file removal.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 09 Apr 2022 23:49:11 +0200
+
+libio-compress-perl (2.104-1) unstable; urgency=medium
+
+  * Import upstream version 2.104.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 09 Apr 2022 23:07:27 +0200
+
+libio-compress-perl (2.103-1) unstable; urgency=medium
+
+  * Import upstream version 2.103.
+  * Update years of upstream copyright.
+  * Bump versioned (build) dependencies on libcompress-raw-* packages.
+  * Move libio-compress-lzma-perl from Recommends to Suggests.
+    Otherwise we have an autopkgtest problem with a versioned dependency loop.
+  * Add empty debian/tests/pkg-perl/syntax-skip for autopkgtest's
+    syntax.t.
+  * debian/copyright: add information about new file.
+  * Add unannounced new dependency on libdata-peek-perl.
+    Thanks to autopkgtest.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 05 Apr 2022 21:56:26 +0200
+
+libio-compress-perl (2.102-1) unstable; urgency=medium
+
+  * Import upstream version 2.102.
+    Closes: #1005174
+  * Declare compliance with Debian Policy 4.6.0.
+  * Update years of packaging copyright.
+  * Set the runtime dependency versions for libcompress-raw-{bzip2,zlib}-perl
+    and libio-compress-lzma-perl manually as, for the first time in ages, they
+    differ from the version of libio-compress-perl itself.
+    Also remove corresponding lintian override.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 08 Feb 2022 16:45:53 +0100
+
 libio-compress-perl (2.101-1) unstable; urgency=medium
 
   * Import upstream version 2.101.

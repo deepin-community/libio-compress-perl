@@ -1,6 +1,177 @@
 CHANGES
 -------
 
+  2.206 25 July 2023
+
+      * 2.206
+        Tue, 25 Jul 2023 16:37:44 +0100
+        6f00921ce36a80f6b507402cee71e9f3a9cc406d
+
+      * Merge branch 'master' of https://github.com/pmqs/IO-Compress
+        Sat, 22 Jul 2023 20:22:41 +0100
+        d561922b964796e94c94c89f69550de5b95fb342
+
+      * Merge pull request #50 from haarg/fix-version-check
+        Sat, 22 Jul 2023 19:13:38 +0100
+        9d4f8755024db3bc16a628fa736680cd6f0b90ab
+
+      * fix version checks to use correct method
+        Fri, 21 Jul 2023 18:36:29 +0200
+        c60f5c619f9a8c3038428724a01c6722e51e37a7
+
+      * drop rt.cpan from SUPPORT section
+        Tue, 18 Jul 2023 09:19:52 +0100
+        02fc4ab0b2c9c30c7014238f20bf02e2857d4c52
+
+  2.205 16 July 2023
+
+      * 2.205
+        Sun, 16 Jul 2023 20:26:06 +0100
+        5f8450648f1915451b0a7ccdd551ec84e18cb05c
+
+      * add perl 5.38
+        Thu, 13 Jul 2023 11:13:24 +0100
+        1dc60a0d48e74f3b707dc4f5c1f0b7b8bf54b10b
+
+      * add on workflow_dispatch
+        Fri, 9 Jun 2023 16:25:09 +0100
+        f99b28e94b29446a60e2f91c762a0f407d7725d4
+
+      * Add some OO examples
+        Fri, 9 Jun 2023 16:18:54 +0100
+        45457e70f8ad202196f20305ae4f8ee48e3cbded
+
+  2.204 8 February 2022
+
+      * Update Gzip.pm
+        https://github.com/pmqs/IO-Compress/pull/49
+        6d0514b86ceeab56884c43fd1e6f09f839c12b74
+        feab074420bf4059eb6fa9d0553a354e2dd33e95
+
+      * Allow Z_NULL
+        https://github.com/pmqs/Compress-Raw-Zlib/issues/17
+        c42da1483767bc8afbdb2d8b03ecda7b67b4d022
+
+
+  2.201 25 June 2022
+
+      * Disable zib header tests
+        Sat Jun 25 09:10:59 2022 +0100
+        63eb5d37291b40dbf07d191a09b7876168008cd4
+
+      * Version 2.201
+        Sat Jun 25 09:00:42 2022 +0100
+        af51310f68bb225d94eaa29b7f3d2bece1935dfd
+
+      * doc update https://github.com/pmqs/IO-Compress/issues/38
+        Thu Jun 23 23:00:31 2022 +0100
+        2002d4fd3b3a6f5de6c6c3dc5989cf42581c1758
+
+      * Changes for zlib-ng
+        Thu Jun 23 22:43:50 2022 +0100
+        2bd52d2918823cc567c3e92dd3d15f87cb4ee8f8
+
+      * Add perl 5.36
+        Sun Jun 5 13:34:18 2022 +0100
+        ede55370ed4c7eb3c66abc71bc25c7e4019b4c44
+
+      * force streaming zip file when writing to stdout https://github.com/pmqs/IO-Compress/issues/42
+        Sun Apr 24 19:43:19 2022 +0100
+        b57a3f83f404f5a24242680de5b406cfcf5c03ac
+
+      * read zip timestamp in localtime
+        Sun Apr 24 13:11:58 2022 +0100
+        0c838f43dc46f292714c82145c9add9932196b01
+
+      * streamzip: tighten up version tests for failing windows tests https://github.com/pmqs/IO-Compress/issues/41
+        Sun Apr 24 12:49:57 2022 +0100
+        3497645228235ea12c4d559d6dedd4cef47fc94a
+
+      * streamzip: update year
+        Sun Apr 24 12:11:35 2022 +0100
+        0ac0d1ef603d8854ffc35976196735b663764992
+
+      * Use Time::Local instead of  POSIX::mktime
+        Tue Apr 19 11:31:43 2022 +0100
+        64a106f1119cbc7dec8db52dca016bb8baacf2d4
+
+  2.106 12 April 2022
+
+      * bin/zipdetails
+        sync 2.104 from https://github.com/pmqs/zipdetails
+        Tue Apr 12 15:39:59 2022 +0100
+        3fe7b8788ab816bebddfdfbb1462d3f439c6b2f1
+
+  2.105 9 April 2022
+
+      * remove WeakDecrypt
+        95892a68780426909b75b4f3d465ff02e630834e
+        5b41f06a271267ef984a971047987b65ba197dd4
+
+  2.104 9 April 2022
+
+      * Sync zipdetails 2.100 from https://github.com/pmqs/zipdetails
+        95c19c89b72441b76294ce93f4acf7c5cea63565
+
+      * Update date in README
+        6b40bd67ee3c295085380cb6c321abf230b481df
+
+      * WeakDecrypt should not be listed in MANIFEST
+        https://github.com/pmqs/IO-Compress/issues/39
+        9e85a8bff391481d1005547cb51c11e02e4a5768
+
+      * Update versions to 2.104
+        cec4bcd8c3e8bef5708f7b5064e5048a02e8179f
+        cec4bcd8c3e8bef5708f7b5064e5048a02e8179f
+
+  2.103 3 April 2022
+
+      * Update version to 2.103
+        97f1893892eccac69b3a8033378b0b44d7c4f3ab
+
+      * Fix for inflateSyncs retrurn code change
+        4843e22285bf8e52c9b5b913d167a1545995c793
+
+      * Add constant for ZIP_CM_AES
+        91be04dd8dc2848e3c25b87ec498cf8ccc34187a
+
+      * Point links to rfcs to ietf.org
+        https://github.com/pmqs/IO-Compress/pull/37
+        a8f28b36cf4d77df1cfa0516867012425920a62f
+
+      * Rename test file to fix manifest warning
+        https://github.com/pmqs/IO-Compress/pull/36
+        955244f9ac0654d7e8d54115162da53c85d7178c
+
+      * Add perl 5.34
+        06f41883f62ed1b88b03c246b16e0b5ef72503bc
+
+      * Fix for Calling nextStream on an IO::Uncompress::Zip object in Transparent mode dies when input is uncompressed
+        https://github.com/pmqs/IO-Compress/issues/34
+        b0f93fe62f84b7d4d4bb8d2ea8e6d5432887103f
+
+      * IO::Compress: Generalize for EBCDIC
+        https://github.com/pmqs/IO-Compress/pull/32
+        90b51dbbd785e2c824cb0a93feef3b3dd5d075f2
+
+      * IO::Compress: Fix misspelling in 112utf8-zip.t
+        c22216b5d3202dce01ef17a271252f82520a6ab9
+
+      * Revert "Always have full zip64 entry in central directory"
+        7df4c9bc98667bc1afd1b4bc5a27d20f94e3cd9c
+
+      * Always have full zip64 entry in central directory
+        333648ee1dece6eb220060c7ec09806f6ebb9866
+
+      * update cpanm path on MacOS
+        33079902934885c515768a08d72e89243a5d01a9
+
+  2.102 28 February 2021
+
+      * Add IO_COMPRESS_SKIP_STDIN_TESTS to skip tests on Windows
+        https://github.com/pmqs/IO-Compress/issues/29
+        b0b511ec6a7dcfa4e372a8b8131767fcb39369b1
+
   2.101 20 February 2021
 
       * fix version numbers in meta files
