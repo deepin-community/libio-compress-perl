@@ -4,7 +4,7 @@ Upstream-Contact: Paul Marquess <pmqs@cpan.org>
 Source: https://metacpan.org/release/IO-Compress
 
 Files: *
-Copyright: 1995-2023, Paul Marquess <pmqs@cpan.org>
+Copyright: 1995-2024, Paul Marquess <pmqs@cpan.org>
 License: Artistic or GPL-1+
 
 Files: t/Test/More.pm t/Test/Simple.pm
@@ -20,7 +20,7 @@ Files: debian/*
 Copyright: 2009, Scott Kitterman <debian@kitterman.com>
  2009, Damyan Ivanov <dmn@debian.org>
  2009, Ryan Niebur <ryan@debian.org>
- 2009-2023, gregor herrmann <gregoa@debian.org>
+ 2009-2024, gregor herrmann <gregoa@debian.org>
  2010, Jonathan Yu <jawnsy@cpan.org>
  2011, Ansgar Burchardt <ansgar@debian.org>
  2012, Alessandro Ghedini <ghedo@debian.org>

@@ -1,3 +1,42 @@
+libio-compress-perl (2.213-1) unstable; urgency=medium
+
+  * Import upstream version 2.213.
+  * Bump versioned test and runtime dependencies.
+  * Use packaged test modules instead of vendored copies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 01 Sep 2024 16:58:10 +0200
+
+libio-compress-perl (2.212-1) unstable; urgency=medium
+
+  * Import upstream version 2.212.
+  * Update versioned (test) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 28 Apr 2024 12:04:12 +0200
+
+libio-compress-perl (2.211-1) unstable; urgency=medium
+
+  * Import upstream version 2.211.
+  * Bump versioned (test) dependencies.
+  * Declare compliance with Debian Policy 4.7.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 07 Apr 2024 20:07:52 +0200
+
+libio-compress-perl (2.208-1) unstable; urgency=medium
+
+  * Import upstream version 2.208.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 03 Apr 2024 18:29:31 +0200
+
+libio-compress-perl (2.207-1) unstable; urgency=medium
+
+  * Import upstream version 2.207.
+  * Update years of upstream and packaging copyright.
+  * Bump versioned test and runtime dependencies.
+  * Simplify tests-version-skew.patch.
+    Thanks to upstream author Paul Marques for the suggestion.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 22 Feb 2024 18:19:55 +0100
+
 libio-compress-perl (2.206-1) unstable; urgency=medium
 
   * Import upstream version 2.206.
