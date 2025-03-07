@@ -6,6 +6,16 @@ TMP     = $(CURDIR)/debian/$(PACKAGE)
 %:
 	dh $@
 
+# we want to use the system version of included modules, so
+# we move the t/Test away and move it back afterwards
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -d $(CURDIR)/t/Test.save ] || mv $(CURDIR)/t/Test.save $(CURDIR)/t/Test
+
+override_dh_auto_configure:
+	[ ! -d $(CURDIR)/t/Test ] || mv $(CURDIR)/t/Test $(CURDIR)/t/Test.save
+	dh_auto_configure
+
 override_dh_auto_test:
 	TEST_SKIP_VERSION_CHECK=1 dh_auto_test
 

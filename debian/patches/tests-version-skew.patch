@@ -1,30 +1,23 @@
 Description: avoid version skew in t/cz-03zlib-v1.t
- Choose expected behaviour based on runtime zlib version instead of build
- time one.
+ Avoid version comparison between build time and runtime version, as they
+ might be different, and assume we always have >= 1.12.2 (true since
+ bookworm).
 Origin: vendor
 Bug-Debian: https://bugs.debian.org/1026753
 Forwarded: not-needed
 Author: gregor herrmann <gregoa@debian.org>
-Last-Update: 2022-12-23
+Last-Update: 2024-02-22
 
 --- a/t/cz-03zlib-v1.t
 +++ b/t/cz-03zlib-v1.t
-@@ -14,7 +14,8 @@
- use CompTestUtils;
- use Symbol;
- 
--use constant ZLIB_1_2_12_0 => 0x12C0;
-+use constant ZLIB_1_2_12_0 => '1.2.12';
-+my $Zlib_ver = Compress::Raw::Zlib::zlib_version ;
- 
- BEGIN
- {
-@@ -704,7 +705,7 @@
+@@ -704,7 +704,9 @@
  
      # Z_STREAM_END returned by 1.12.2, Z_DATA_ERROR for older zlib
      # always Z_STREAM_ENDin zlib_ng
 -    if (ZLIB_VERNUM >= ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
-+    if ($Zlib_ver gt ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
++    # Debian: 1) avoid version skew compile time version and runtime version,
++    # and 2) we have >= 1.12.2 since bookworm
++    if (1)
      {
          cmp_ok $status, '==', Z_STREAM_END ;
      }
